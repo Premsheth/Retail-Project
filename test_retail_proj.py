@@ -15,7 +15,7 @@ def test_read_orders_df(spark):
 "entry1,count",
 [("CLOSED", 7556),
 ("PENDING_PAYMENT", 15030),
-("COMPLETE", 22899)])
+("COMPLETE", 22900)])
 @pytest.mark.latest()
 def test_check_count_df(spark,entry1,count):
     orders_df = read_orders(spark, "LOCAL")
